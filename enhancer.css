@@ -1,0 +1,67 @@
+@media screen and (min-width: 1300px)
+{
+	.nota_styled .ng-star-inserted .cu-task-popup .cu-task-popup__name-text, /* Whiteboard tasks title */
+	.nota_styled .gantt_task_content .cu-gantt__chart-row-task-content .task-name,				/* Gant task title*/
+	.nota_styled .gantt_side_content .cu-gantt__chart-row-right .task-name								/* Gant small task title */
+	{
+		font-size: 3ex;
+		line-height: 3ex;
+	}
+	
+	.nota_styled .cu-dashboard-board-card .cu-panel-board__header-container .cu-panel-board__title-container .cu-panel-board__clickable-name
+	{
+	    zoom: 1.2;
+	    font-weight: 600;
+	}
+	
+	
+	/* Card dimentions */
+	#app-root cu-dashboard-container cu-whiteboard cu-dom-renderer cu-whiteboard-render-surface cu-dom-renderer-nodes cu-dom-renderer-node cu-dom-renderer-node-view:has( .cu-task-popup__name-text)
+	{
+		max-height: 140px !important;
+		max-width: 440px !important;
+		height: 10em !important;
+		width: 32em !important;
+	}
+
+}
+
+
+/* ========= All media =========== */
+
+/*Board*/
+.nota_styled .cu-panel-board__column-body .cu-panel-board__task
+{
+	border: 1.1px solid LightGray;
+}
+
+/*#dashboard-board-container .cu-dashboard-board__inner .board-view__content-container .cu-dashboard-board__body-inner*/
+.nota_styled .cu-dashboard__router-outlet_v6 .cu-dashboard-board__body-inner 
+{
+    background-color: rgba(246,248,246,.6);
+}
+
+
+/*Gant*/
+.nota_styled .gantt_task_bg .gantt_row.odd,
+.nota_styled .gantt_task_bg .gantt_task_row.odd {
+    background-color: #fff;
+    border: 1px dotted silver;
+}
+
+.nota_styled .gantt_container .gantt_task_bg .gantt_task_row:hover {
+	border: 1px solid Gold !important;
+}
+
+/*Nota tech*/
+.nota_styled cu-global-actions-bar .ng-star-inserted .left-part .nota_btn
+{
+	margin-left: 1em;
+	padding-left: 1ex;
+	padding-right: 1ex;
+}
+
+.nota_styled cu-global-actions-bar .ng-star-inserted .left-part .nota_btn *
+{
+	color: silver;
+}
